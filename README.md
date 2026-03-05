@@ -25,14 +25,10 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [X] Describe the game's purpose: a simple number‑guessing app built with Streamlit where the player tries to match a randomly chosen secret, with difficulty‑based ranges, limited attempts and a scoring system.
+- [X] Detail which bugs you found: the hint logic was inverted (every “Too High” guess produced “Go HIGHER!”) and the show‑hint control behaved like a one‑time flag, so toggling the checkbox after a guess didn’t hide/show the existing hint.
+- [X] Explain what fixes you applied: swapped the hint messages in check_guess and moved all game logic into logic_utils.py for testability; added session‑state tracking of the last hint and a post‑submit display block so the checkbox truly toggles hint visibility.
 
 ## 📸 Demo
-
-- [ ] [Insert a screenshot of your fixed, winning game here]
-
-## 🚀 Stretch Features
-
-- [ ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here]
+- [X] Screenshot
+<img width="991" height="916" alt="Screenshot 2026-03-04 at 10 30 04 PM" src="https://github.com/user-attachments/assets/59af803f-551f-4690-b83e-89b12dbaeb1f" />
